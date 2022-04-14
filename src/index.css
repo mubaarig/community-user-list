@@ -192,7 +192,6 @@ main {
     cursor: pointer;
 }
 .user-card {
-    width: 22vw;
     height: 170px;
     background: rgba(209, 230, 249, 0.3);
     border: solid #bdbdbd 0;
