@@ -9,14 +9,7 @@ function App() {
     return (
         <main>
             <section className="container">
-                <Users users={users} />
-                <div className='user-card'>
-                    waynka
-                </div>
-                <div className='user-card'>
-                    waynka
-                </div>
-
+                <Users users={ users } />
             </section>
         </main>
     );
