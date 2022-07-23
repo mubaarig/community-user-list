@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-const User = ({ id, name, location, image }) => {
+const User = ({ id, name, location, image, about }) => {
     return (
         <div class="flex-container">
             <div class="flex-items">
@@ -13,6 +13,7 @@ const User = ({ id, name, location, image }) => {
                         <h4>{name}</h4>
                         <h6>{location}</h6>
                     </div>
+                    
                 </article>
             </div>
         </div>

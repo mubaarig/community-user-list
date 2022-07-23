@@ -1,0 +1,62 @@
+
+.news__slides {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.news__thumbnail {
+  width: 600px;
+  height:300px;
+}
+
+
+
+.dj-slider {
+    /* background-image: url('images/slide-backgrnd.jpg'); */
+    background-size: cover;
+    display: flex;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid black;
+  }
+  
+  
+  .dj-slide {
+    width: calc(100% - 9px);
+    flex-shrink: 0;
+    /* border: 1px solid red; */
+    margin: 7px 4px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slide-it 0s infinite;
+    height: 97vh;
+  }
+  
+  @keyframes slide-it {
+    0%    { transform: translateX(0); }
+    25%   { transform: translateX( calc(-100% - 100px) ); }
+    50%   { transform: translateX( calc(-200% - 200px) ); }
+    100%  { transform: translateX( calc(-300% - 300px) ); }
+  }
+
+
+  .new-container {
+    display: grid; 
+    grid-template-columns: 2.5fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 9px 10px; 
+    grid-template-areas: 
+      "news-slide news-slide news-slide news-slide"
+      ". . . ."
+      ". . . ."
+      ". . . ."; 
+  }
+  .news-slide {
+    display: grid; 
+  }

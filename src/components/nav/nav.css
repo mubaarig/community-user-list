@@ -1,0 +1,41 @@
+nav {
+   margin: 0 auto;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+
+.search-nav {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.search-nav__field {
+    padding: 0.7rem;
+    border-radius: 0.1rem;
+    border: 1px solid #373C47
+
+}
+
+.menu-nav {
+     font-size: 1.2rem;
+}
+.menu-nav a {
+    padding : 1rem;
+    text-decoration-thickness: var(--clr-black);
+    text-transform: capitalize;
+}
+
+.menu-nav a:hover {
+    background-color: rgb(135, 160, 206);
+    color: rgb(226, 233, 249);
+    border-radius: 0.5rem;
+}
+
+
+
